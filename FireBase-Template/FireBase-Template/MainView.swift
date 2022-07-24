@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
-    var isLogin = false
+    var isLogin = true
     var body: some View {
         if isLogin{
-            MainView()
+            HomeView().navigationTitle("Home")
         }else{
             SignInView().navigationTitle(Text("Sign in"))
         }

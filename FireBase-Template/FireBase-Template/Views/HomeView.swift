@@ -9,9 +9,21 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        List{
-            Text("Hhhhh")
-            Text("Hhhhh")
+        VStack{
+            List {
+                NavigationLink {
+                    addView().navigationTitle("Add Item")
+                } label: {
+                    Text("Add item")
+                }
+                
+                NavigationLink {
+                    addView().navigationTitle("Add Item")
+                } label: {
+                    Text("Add item")
+                }
+            }
+
         }
     }
 }
